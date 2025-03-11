@@ -19,6 +19,19 @@
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
 
+  <repositories>
+    <repository>
+        <id>nexus-releases</id>
+        <name>maven-releases</name>
+        <url>http://52.66.246.94:8081/repository/maven-releases/</url>
+    </repository>
+    <repository>
+        <id>nexus-snapshots</id>
+        <name>maven-snapshots</name>
+        <url>http://52.66.246.94:8081/repository/maven-snapshots/</url>
+    </repository>
+</repositories>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -64,4 +77,16 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <distributionManagement>
+    <repository>
+        <id>nexus-releases</id>
+        <url>http://52.66.246.94:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus-snapshots</id>
+        <url>http://52.66.246.94:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
+  
 </project>
