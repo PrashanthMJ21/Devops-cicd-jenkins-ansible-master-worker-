@@ -1,0 +1,17 @@
+
+---
+- name: Ansible playbook to build and run docker container
+  hosts: dev
+  user: ansible
+  connection: ssh
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: Remove previous container
+      command: docker rm -f tomcat
+      ignore_errors: yes
+    - name: Remove previous image
+      command: docker rmi pmj41/warimage
+      ignore_errors: yes
+    - name: Pull and run image
+      command: docker run -it -d -p 8081:8080 --name tomcat pmj41/warimage
