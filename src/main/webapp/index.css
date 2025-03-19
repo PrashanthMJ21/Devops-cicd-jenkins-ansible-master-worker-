@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color:#FFE9D0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+#flex-container1{
+    padding: 0px 80px;
+    width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(65, 61, 61);
+    flex-wrap: wrap;
+}
+#flex-container16{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+#flex-container2{
+    width: 100%;
+    height: 600PX;
+    background-color:#fd9eaf;
+    display: flex;
+}
+#flex-container21{
+    margin-left: 80px;
+    width: 55%;
+    height: 700PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 20px;
+    gap: 40px;
+    color: white;
+}
+#flex-container22{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 700PX;
+
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #C73659;
+    border-width: 0;
+    border-radius: 10px;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+button:hover{
+    transform: scale(1.05,1.05);
+}
+#d3{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#flex-container3{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.flex-item3{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(229, 229, 229);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.flex-item3:hover{
+    transform: scale(1.05,1.05);
+}
+#flex-container4{
+    width: 100%;
+    height: 500PX;
+    background-color:#80C4E9;
+    display: flex;
+    margin-top: 70px;
+}
+#flex-container42{
+    width: 50%;
+    height: 600PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 20px;
+    gap: 40px;
+    color: white;
+}
+#flex-container41{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 600PX;
+
+}
+.b1{
+    background-color: #1679AB;
+}
+.flex1{
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.flex1:hover{
+    transform: scale(1.08,1.08);
+    cursor: pointer;
+}
+
+
